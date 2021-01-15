@@ -1,8 +1,8 @@
 FROM gitpod/workspace-full
 
 # add anaconda prerequisites
-RUN apt-get update -y \
-&& apt-get install -y \
+RUN sudo apt-get update -y \
+&& sudo apt-get install -y \
 libgl1-mesa-glx libegl1-mesa libxrandr2 libxrandr2 libxss1 libxcursor1 libxcomposite1 libasound2 libxi6 libxtst6
 
 # copy install Anaconda script
